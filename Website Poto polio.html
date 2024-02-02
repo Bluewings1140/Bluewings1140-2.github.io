@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('background.jpg') no-repeat center center fixed; /* Ganti 'background.jpg' dengan nama file gambar latar belakang kamu */
+            background-size: cover;
+            position: relative;
+            z-index: 0;
+        }
+
+        /* .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(55, 71, 79, 0.7), rgba(55, 71, 79, 0.9)); 
+            z-index: -1;
+        } */
+
+        div {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+
+        header, .services, .portfolio, .contact, footer {
+            padding: 20px;
+        }
+
+        header {
+            background-color: rgba(55, 71, 79, 0.7); /* Warna overlay untuk header */
+        }
+
+        .services, .portfolio, .contact, footer {
+            background-color: rgba(55, 71, 79, 0.9); /* Warna overlay untuk konten lain */
+        }
+
+        a {
+            color: #2196F3; /* Warna biru yang lebih lembut */
+        }
+
+        .portfolio-item {
+            margin-bottom: 20px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+    <title>Jasa Pembuatan Website</title>
+</head>
+<body>
+    <!-- <div class="overlay"></div> -->
+
+    <div>
+        <header>
+            <h1>Jasa Pembuatan Website Profesional</h1>
+            <p>Tim ahli kami siap membantu mewujudkan website impian Anda.</p>
+        </header>
+
+        <section class="services">
+            <h2>Layanan Kami</h2>
+            <ul>
+                <li>Desain Website Modern</li>
+                <li>Pengembangan Frontend dan Backend</li>
+                <li>Optimisasi SEO</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+
+        <section class="portfolio">
+            <h2>Portofolio Kami</h2>
+            <div class="portfolio-item">
+                <img src="portfolio1.jpg" alt="Portofolio 1">
+                <p>salah satu contoh website yang kami buat sebagai Berikut </p>
+            </div>
+            <!-- Tambahkan lebih banyak portofolio di sini -->
+        </section>
+
+        <section class="contact">
+            <h2>Hubungi Kami</h2>
+            <p>Jika Anda tertarik dengan layanan kami, hubungi kami melalui WhatsApp di <a href="https://wa.me/628973017117" target="_blank">0897-3017-117</a>.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Jasa Pembuatan Website Profesional</p>
+        </footer>
+    </div>
+</body>
+</html>
